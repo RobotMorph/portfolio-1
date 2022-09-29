@@ -1,0 +1,30 @@
+/* Общие настройки */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+.stop-scroll {
+    position: fixed; 
+    overflow-y: scroll;
+}
+    
+@media only screen and (max-width: 992px) {
+    .menu {
+        justify-content: space-around;
+
+    }
+
+    .name {
+        padding-left: 15px;
+    }
+}

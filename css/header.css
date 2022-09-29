@@ -1,0 +1,193 @@
+/* Navigation */
+    
+header {
+    justify-content: space-around;
+}
+    
+.menu {
+    max-width: 945px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #828282;
+}
+    
+.menu li {
+    display: inline;
+    margin: 33px 0;
+}
+    
+.menu a {
+    color: #828282;
+    font-size: 18px;
+    line-height: 22px;
+    font-family: "Gilroy-Bold";
+}
+    
+.menu a:hover {
+    color: #070707;
+}
+
+/* General info */
+
+.general-info {
+    width: 100%;
+    max-width: 945px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    vertical-align: bottom;
+}
+
+.name {
+    padding-top: 39px;
+    height: 100%;
+    font-weight: bold;
+    font-size: 40px;
+    font-family: 'Gilroy-Bold';
+    font-size: 47px;
+    line-height: 59px;
+    color: #070707;
+}
+
+.role {
+    font-family: 'Gilroy-Medium';
+    font-size: 18px;
+    line-height: 22px;
+    color: #070707;
+}
+
+.lang {
+    transform: rotate(270deg) translateX(50%);
+    font-weight: bold;
+    font-family: 'Gilroy-Bold';
+    font-size: 16px;
+    line-height: 20px;
+    color: #828282;
+    transform: rotate(270deg) translateX(50%);
+}
+
+/* Main photo */
+ 
+.main-photo img {
+    display: block;
+    margin: 49px auto 0 auto;
+    max-width: 945px;
+    width: 100%;
+}
+
+
+
+@media only screen and (max-width: 480px) {
+    
+    /* Header */
+
+    nav {
+        display: flex;
+        justify-content: end;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .lang {
+        display: none;
+    }
+
+    .close-open-menu {
+        display: block;
+        position: absolute;
+        background-color: #FFFFFF;
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+        border: none;
+    }
+
+    /* .add-lang {
+        display: block;
+        z-index: 1;
+        position: relative;
+        transform: rotate(90deg) translateX(50%);
+        margin-top: 70vh;
+        font-family: 'Gilroy-Bold';
+        font-size: 34px;
+        line-height: 42px;
+        width: 100%;
+    } */
+    
+    .burger {
+		display: block;
+		position: absolute;
+		width: 30px;
+		height: 20px;
+        margin-top: 68px;
+        margin-right: 26px;
+        z-index: 2;
+    }
+
+    .button::after, .button::before {
+		content: '';
+		background-color: #000000;
+		position: absolute;
+		width: 100%;
+		height: 4px;
+    }
+
+    .button::before {
+        top: 0;
+    }
+
+    .button::after {
+        bottom: 0;
+    }
+
+    .burger span {
+        position: absolute;
+        background-color: #000000;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        top: 8px;
+    }
+
+    .menu li {
+        display: block;
+        margin: 68px 0 0 26px;
+    }
+    
+    .menu a {
+        color: #828282;
+        font-size: 34px;
+        line-height: 42px;
+    }
+    
+    .menu a:hover {
+        color: #070707;
+    }
+
+    /* General info */
+    
+    .general-info {
+        display: block;
+        padding-left: 26px;
+    }
+
+    .name {
+        padding: 54px 0 0 0;
+    }
+
+    .role {
+        margin-top: 30px;
+    }
+
+    /* Main photo */
+
+    .main-photo img {
+        margin-top: 36px;
+        padding: 0 26px;
+    }
+}

@@ -1,0 +1,57 @@
+ /* About me */
+    
+ .about-me {
+    text-align: center;
+    background-color: #F6F6F6;
+    width: 100%;
+    margin-top: 104px;
+}
+
+.about-me h1 {
+    padding: 120px 0 17px 0;
+    font-family: 'Gilroy-Bold';
+    font-size: 34px;
+    line-height: 42px;
+}
+
+.about-me p {
+    font-family: 'Gilroy-Medium';
+    font-size: 18px;
+    line-height: 22px;
+    color: #070707;
+    margin-top: 50px;
+}
+
+.about-me p:first-child {
+    margin-top: 17px;
+}
+
+.about-me p:last-child {
+    padding-bottom: 107px;
+}
+
+@media only screen and (max-width: 480px) {
+
+    /* About me */
+
+    .about-me {
+        margin-top: 83px;
+    }
+
+    .about-me h1 {
+        padding-top: 81px;
+    }
+
+    .about-me p {
+        padding: 0 29px 0 30px;
+        margin-top: 48px;
+    }
+
+    .about-me p:first {
+        margin-top: 30px;
+    }
+
+    .about-me p:last-child {
+        padding-bottom: 76px;
+    }
+}
