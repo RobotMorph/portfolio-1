@@ -14,8 +14,7 @@ li {
 }
 
 .stop-scroll {
-    position: fixed; 
-    overflow-y: scroll;
+    overflow-y: hidden;
 }
     
 @media only screen and (max-width: 992px) {
